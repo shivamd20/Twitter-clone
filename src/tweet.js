@@ -68,10 +68,10 @@ class Tweet extends React.Component{
       
         <CardTitle title={this.props.tweet||"tweet"} subtitle={this.props.time||"time"} />
         <CardActions>
-          <FlatButton label={"comment "+"0"||this.props.comments} style={stylet}/>
-          <FlatButton label={"Retweet "+"0"||this.retweets} style={stylet}/>
-          <FlatButton label={"like "+"0"||this.props.love} style={stylet}/>
-          <FlatButton label={"Direct Message "+"0"||this.props.dm} style={stylet}/>
+          <FlatButton label={"comment "+this.props.comments} style={stylet}/>
+          <FlatButton label={"Retweet "+this.props.retweets} style={stylet}/>
+          <FlatButton label={"like "+this.props.love} style={stylet}/>
+          <FlatButton label={"Direct Message "+this.props.dm} style={stylet}/>
         </CardActions>
       </Card>}
 }
